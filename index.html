@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+</head>
+<body>
+    <!--Header-->
+        <header>
+            <!--Nav-->
+            <div class="nav container">
+                <!--Menu Icon-->
+                <i class="ri-menu-line" id="menu-icon"></i>
+                <!--Logo-->
+                <a href="#" class="logo">LuvArte</a>
+                <!--Navbar-->
+                <div class="navbar">
+                    <a href="products" class="nav-link">Camisetas & Tops</a>
+                    <a href="products" class="nav-link">Outwear</a>
+                    <a href="products" class="nav-link">Bottom</a>
+                    <a href="products" class="nav-link">Caps</a>
+                </div>
+                <!--Cart Icon-->
+                <a href="cart.html">
+                     <i class="ri-shopping-bag-line" id="cart-icon"
+                     ><span id="cart-count">0</span></i>
+                </a>
+            </div>
+        </header>
+           <!--Home-->
+           <section class="home" id="home">
+            <div class="home-img container">
+                <img src="images/home.png" alt="">
+            </div>
+           </section>
+              <!--Products-->
+              <section class="products container" id="products">
+                <!--Heading-->
+                <h2 class="heading">Related Products</h2>
+                <div class="product-container" id="productList">
+                    <div class="product">
+                        <img src="images/product-1.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Hoodie Sweatshirt</h2>
+                            <p class="product-price">$250</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-2.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Cotton Hoodie</h2>
+                            <p class="product-price">$220</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-3.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Black T-shirt</h2>
+                            <p class="product-price">$60</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-4.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Phone Case</h2>
+                            <p class="product-price">$40</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-5.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Black Jacket</h2>
+                            <p class="product-price">$150</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-6.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Hoodie Sweatshirt</h2>
+                            <p class="product-price">$607</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-7.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">Beige Hoodie</h2>
+                            <p class="product-price">$80</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/product-8.png" class="product-img" alt="product">
+                        <div class="product-info">
+                            <h2 class="product-title">White Hoodie</h2>
+                            <p class="product-price">$270</p>
+                            <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <!--Link to Js-->
+              <script src="js/main.js"></script>
+</body>
+</html>
