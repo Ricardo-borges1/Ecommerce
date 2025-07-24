@@ -128,7 +128,7 @@ header{
 }
 
 .home-img::before{
-    content: "LUVARTE";
+    content: "COBUCCI";
     font-size: 22rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -322,3 +322,105 @@ header{
     max-width: 150px;
 }
 
+
+.toast-container{
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast{
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: 15px 20px ;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    max-width: 300px;
+    word-wrap: break-word;
+    opacity: 0;
+    transform: translateX( 100%);
+    transition: all 0.3s ease;
+}
+
+
+.toast-show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.footer{
+    background: #181715;
+    padding: 60px 0;
+    margin-top: 60px;
+}
+
+.footer-c{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    gap: 1rem;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h2{
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social i{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Esconde a barra de rolagem no Chrome, Edge e Safari */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.footer-box h3 {
+    font-size: 1.7rem; /* maior que os links */
+    color: #4be38ac0;    /* verde claro e vibrante */
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0.7rem; /* espaço abaixo do título */
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.footer-box > h3 {
+    margin-top: 0;
+}
+
+.footer-box a{
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    color: var(--bg-color);
+    text-transform: uppercase;
+    padding-top: 30px;
+}

@@ -24,6 +24,7 @@ function addToCart(productCard) {
     }
     updateLocalStorage();
     updateCartCount();
+    showToast(`${name} added to cart!`);
 }
 
 
@@ -94,6 +95,23 @@ function displayCartItem(){
     }
 }
 
+
+//Quantioty change
+function changeQuantity(name, delta) {
+    const item = cartItems.find((item) => item.name === name);
+    if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) {
+            removeItem(name);
+        } else {
+            updateLocalStorage();
+            updateCartCount();
+            displayCartItem();
+        }
+    }
+    
+}
+
 //Save cart in LocalStorage
 function updateLocalStorage() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -106,4 +124,39 @@ window.onload = function (){
     if (document.getElementById("cartItems")) {
         displayCartItem();
     }
+    createToastContainer();
+};
+
+
+//Toast Notification
+function createToastContainer(){
+    if (document.getElementById("toast-container")) return;
+
+    const toastContainer = document.createElement("div");
+    toastContainer.id = "toast-container";
+    toastContainer.className = "toast-container";
+    document.body.appendChild(toastContainer);
+}
+
+function showToast(message){
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = message;
+
+    const container = document.getElementById("toast-container");
+    container.appendChild(toast);
+
+    //show animation
+    setTimeout(() => {
+        toast.classList.add("toast-show");
+    }, 100);
+
+    setTimeout(() => {
+        toast.classList.remove("toast-show");
+        setTimeout(() => {
+            if(container.contains(toast)) {
+                container.removeChild(toast);
+            }
+        }, 300);
+    }, 3000);
 }
