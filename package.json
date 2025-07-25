@@ -1,0 +1,28 @@
+{
+  "name": "estudo-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js", 
+    "dev":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ricardo-borges1/Ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ricardo-borges1/Ecommerce/issues"
+  },
+  "homepage": "https://github.com/Ricardo-borges1/Ecommerce#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "stripe": "^18.3.0"
+  }
+}
