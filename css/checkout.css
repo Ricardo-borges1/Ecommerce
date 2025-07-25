@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6e5df;
+  color: #fcfbf1;
+  min-height: 100vh;
+  padding: 0 20px 40px;
+}
+
+header {
+  background-color: #346748;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  margin-bottom: 40px;
+}
+
+.nav.container {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-cart {
+  position: relative;
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+#cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #ff3c00;
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.checkout-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #346748;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 60, 0, 0.3);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cart-summary {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.cart-item-name {
+  color: #f1f1f1;
+}
+
+.cart-item-qty {
+  margin-left: 6px;
+  font-weight: 400;
+  color: #bbb;
+}
+
+.cart-item-subtotal {
+  color: #94fd57;
+  font-weight: 700;
+}
+
+.total {
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #94fd57;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ddd;
+}
+
+form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  background-color: #2b2b2b;
+  border: 2px solid #444;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #f1f1f1;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #94fd57;
+  outline: none;
+}
+
+form input.error {
+  border-color: #ff0000;
+  background-color: #3c1a1a;
+}
+
+form button {
+  width: 100%;
+  background-color: #94fd57;
+  color: #3c1a1a;
+  padding: 16px 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #046301;
+  text-decoration: #f1f1f1;
+}
+
+/* Mensagem de erro */
+.error-message {
+  color: #ff4444;
+  font-size: 0.9rem;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}

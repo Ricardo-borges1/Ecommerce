@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout - Cobucci</title>
+  <link rel="stylesheet" href="css/checkout.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <a href="index.html" class="logo">Cobucci</a>
+      <a href="cart.html" class="nav-link nav-cart">
+        <i class="ri-shopping-bag-line"></i>
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="checkout-container">
+    <h1>Finalizar Compra</h1>
+
+    <div id="cart-summary" class="cart-summary">
+      <!-- Produtos do carrinho aparecerão aqui -->
+    </div>
+
+    <div class="total">
+      <strong>Total: $ <span id="total-price">0.00</span></strong>
+    </div>
+
+    <form id="payment-form" novalidate>
+      <h2>Informações do Pagamento</h2>
+
+      <label for="name">Nome Completo:</label>
+      <input type="text" id="name" required placeholder="Seu nome completo" />
+
+      <label for="card-number">Número do Cartão:</label>
+      <input type="text" id="card-number" maxlength="19" placeholder="1234 5678 9012 3456" required />
+
+      <label for="expiry">Validade (MM/AA):</label>
+      <input type="text" id="expiry" maxlength="5" placeholder="MM/AA" required />
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" maxlength="3" placeholder="123" required />
+
+      <button type="submit">Pagar Agora</button>
+    </form>
+  </main>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>
